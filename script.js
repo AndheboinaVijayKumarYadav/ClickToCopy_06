@@ -20,7 +20,8 @@ function copyText(e) {
     // Copying text to clipboard using execCommand() method
     document.execCommand('copy');
      */
-
+    
+    // here the write method accepts only one parameter and  is asyncronous method which returns a promise
     navigator.clipboard.writeText(coupon.value).then(() => {
         copyBtn.innerText = 'Copied!!!';
 
